@@ -1,0 +1,113 @@
+
+.sidebar{
+    height: 100vh;
+    width: 300px;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    left: -500px;
+    transition: all .4s ease-in-out;
+}
+.logo{
+    display: block;
+    padding: 15px;
+}
+
+.sidebar.active{
+    left:0;
+}
+
+.backDrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,.6);
+    width: 100%;
+    height: 100vh;
+    cursor: pointer;
+    display: none;
+}
+.backDrop.active{
+    display: block;
+    animation: fadeIn 0.4s ease-in-out;
+}
+
+.sidebarMenu {
+    padding: 0;
+    list-style: none;
+}
+
+.sidebarMenu li {
+    margin-bottom: 5px;
+
+}
+
+.sidebarMenu li a:link,
+.sidebarMenu li a:visited{
+    color:#fff;
+    padding: 10px;
+    display: block;
+    font-size: 20px;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+
+.navigationToggle {
+    position: fixed;
+    left: 20px;
+    top: 20px;
+    cursor: pointer;
+    color: #fff;
+}
+
+#closeNavbar{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+    transition: all .1s ease-in-out;
+}
+i#closeNavbar:hover {
+    transform: rotate(45deg);
+}
+
+
+.section{
+    height: 100vh;
+    border: 2px solid orange;
+    font-size: 42px;
+    color:#fff;
+    padding: 30px;
+    text-align: center;
+}
+
+.section:nth-of-type(1){
+    background-color:brown;
+}
+.section:nth-of-type(2){
+    background-color: blueviolet;
+}
+.section:nth-of-type(3){
+    background-color:yellow;
+}
+.section:nth-of-type(4){
+    background-color: darkgoldenrod;
+}
+
+
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+
+    }
+
+    to{
+        opacity: .4s;
+
+    }
+}
+
+
+
+
